@@ -4,12 +4,10 @@ const input = document.querySelector("[name='todo']");
 const todoList = document.getElementById('todos');
 
 // Create empty array or cached data if available
-//const todoData = [];
+const todoData = existingTodos || [];
 
 // Side Effects
 const existingTodos = JSON.parse(localStorage.getItem('todos'));
-
-const todoData = existingTodos || [];
 
 todoData.forEach(y => addTodo(y));
 
