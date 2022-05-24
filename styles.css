@@ -1,0 +1,23 @@
+body {
+    background-color: #FCD9D9;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    list-style-type: square;
+}
+
+.center-hv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.center-h {text-align: center;}
+
+h1 { color: #FFF3DD; }
+ul {
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
