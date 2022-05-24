@@ -3,13 +3,12 @@ const form = document.querySelector('form');
 const input = document.querySelector("[name='todo']");
 const todoList = document.getElementById('todos');
 
-// Create empty array or cached data if available
-const todoData = existingTodos || [];
+// Side Effects & Life cycle
+const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
 
-// Side Effects
-const existingTodos = JSON.parse(localStorage.getItem('todos'));
+const todoData = [];
 
-todoData.forEach(y => addTodo(y));
+existingTodos.forEach(y => addTodo(y));
 
 // Update UI
 function addTodo(x) {
